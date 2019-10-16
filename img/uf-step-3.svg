@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="287.003px" height="292.78px" viewBox="0 0 287.003 292.78" enable-background="new 0 0 287.003 292.78"
+	 xml:space="preserve">
+<rect x="4.609" y="3.605" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="278.913" height="286.249"/>
+<text transform="matrix(1 0 0 1 55.4893 28.52)"><tspan x="0" y="0" fill="#BE1E2D" font-family="'MyriadPro-Regular'" font-size="12">STEP 3: CUSTOMER CONVERTS AND</tspan><tspan x="36.762" y="14.4" fill="#BE1E2D" font-family="'MyriadPro-Regular'" font-size="12">ACTIVITY RECORDED</tspan></text>
+<rect x="11.221" y="117.729" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="62.833" height="39.665"/>
+<text transform="matrix(1 0 0 1 20.0859 134.0596)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">Conversion</tspan><tspan x="10.04" y="12" font-family="'MyriadPro-Regular'" font-size="10">occurs</tspan></text>
+<text transform="matrix(1 0 0 1 87.0806 61.3472)" font-family="'MyriadPro-Regular'" font-size="10" text-decoration=" underline">PUT  to Customers table:</text>
+<text transform="matrix(1 0 0 1 87.3999 75.771)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">- email</tspan><tspan x="0" y="12" font-family="'MyriadPro-Regular'" font-size="10">- first/last name</tspan><tspan x="0" y="24" font-family="'MyriadPro-Regular'" font-size="10">- company_name</tspan></text>
+<text transform="matrix(1 0 0 1 83.5195 125.3472)" font-family="'MyriadPro-Regular'" font-size="10" text-decoration=" underline">PARSE email to get company url</text>
+<text transform="matrix(1 0 0 1 85.1147 150.9692)" font-family="'MyriadPro-Regular'" font-size="10" text-decoration=" underline">GET logo from API where:</text>
+<text transform="matrix(1 0 0 1 87.4004 167.0591)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">- company url = parsed url </tspan><tspan x="0" y="12" font-family="'MyriadPro-Regular'" font-size="10">from email</tspan></text>
+<text transform="matrix(1 0 0 1 86.6021 210.6812)" font-family="'MyriadPro-Regular'" font-size="10" text-decoration=" underline">POST to Customer_Activities table:</text>
+<text transform="matrix(1 0 0 1 87.4004 226.2271)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">- id</tspan><tspan x="0" y="12" font-family="'MyriadPro-Regular'" font-size="10">- event (conversion)</tspan><tspan x="0" y="24" font-family="'MyriadPro-Regular'" font-size="10">- conversion_event_id</tspan><tspan x="0" y="36" font-family="'MyriadPro-Regular'" font-size="10">- user_id</tspan><tspan x="0" y="48" font-family="'MyriadPro-Regular'" font-size="10">- customer_id</tspan></text>
+<rect x="209.054" y="55.189" fill="#B0E1EC" width="68.336" height="29.999"/>
+<text transform="matrix(1 0 0 1 215.0864 68.1895)"><tspan x="0" y="0" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">CONVERSION</tspan><tspan x="13.834" y="12" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">ASSIST</tspan></text>
+<rect x="211.471" y="138.287" fill="#D3D5D6" width="63.17" height="34.665"/>
+<text transform="matrix(1 0 0 1 223.1372 153.2876)"><tspan x="0" y="0" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">CLEARBIT </tspan><tspan x="0.465" y="12" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">LOGO API</tspan></text>
+<rect x="225.89" y="90.188" fill="#DAB0D3" width="34.332" height="17.667"/>
+<text transform="matrix(1 0 0 1 235.5562 102.1885)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">API</text>
+<rect x="226.807" y="178.165" fill="#DAB0D3" width="34.332" height="17.666"/>
+<text transform="matrix(1 0 0 1 236.4731 190.1646)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">API</text>
+<rect x="209.888" y="216.227" fill="#B0E1EC" width="68.336" height="29.999"/>
+<text transform="matrix(1 0 0 1 215.9204 229.2271)"><tspan x="0" y="0" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">CONVERSION</tspan><tspan x="13.834" y="12" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">ASSIST</tspan></text>
+<rect x="226.724" y="251.226" fill="#DAB0D3" width="34.332" height="17.667"/>
+<text transform="matrix(1 0 0 1 236.3901 263.2261)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">API</text>
+</svg>

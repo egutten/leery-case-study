@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leery Case Study</title>
+    <link rel="stylesheet" href="case-study.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="back">
+        <a class="back-button" href="#">
+          <i class="fas fa-chevron-left"></i>
+          <p>Go back</p>
+        </a>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="overlay"></div>
+      <div class="overlay-text">
+        <p class="title">Case Study: Leery</p>
+        <p>Dynamic social proof for B2B businesses</p>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Problem</h2>
+      <p>B2B businesses do not leverage dynamic forms of social proof as effectively as B2C businesses.</p>
+      <h2>Solution</h2>
+      <h3>Overview</h3>
+      <p><em>I came to this solution by researching and examining competitive social proof products. The most compelling to me was Proof, and it struck me how it was built only for B2C businesses. I came to the idea of adding logos to Proof's message model by noticing that the typical B2B practice is to statically post logos on a homepage. That static posting not only discourages any updates to the group of logos, it also does not bring any particular attention to them.</em></p>
+      <ul>
+        <li><p>Concept</p>
+          <ul>
+            <li><p>Show Prospective customers only the most current social proof data through a pop-up messate (the "Message"), which includes:</p>
+              <ul>
+                <li>The most recent conversion event that took place (e.g. “Just signed-up for a trial”)</li>
+                <li>How long ago the conversion event occurred (e.g. “2 seconds ago”)</li>
+                <li>The logo of the customer involved in the social proof (to take advantage of a benefit particular to B2B businesses)</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><p>Execution</p>
+          <ul>
+            <li><p>Offer third-party javascript that:</p>
+              <ul>
+                <li>Gathers a B2B business’ (User’s) conversion data necessary to populate the Message (“Conversion Snippet”)</li>
+                <li>Generates the Message on load of a User’s webpage (“Message Snippet”)</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3>User Stories</h3>
+      <p><em>I started by writing user stories, not only to help me think through what I needed to do, but also to simulate the project planning process that might occur with a larger team.</em></p>
+      <ul>
+        <li><p>As a User:</p>
+          <ul>
+            <li>I want to be presented with a landing page for the Leery product that funnels me to the sign-in/log-in routes so it is easy for me to access it.</li>
+            <li>I want to be able to configure and preview the appearance of my Message during the sign-up flow so I can use Leery right away.</li>
+            <li><p>While logged in to the Leery User App I want to:</p>
+              <ul>
+                <li>Access and be instructed how to use the pre-generated Snippets</li>
+                <li>Edit my original Message and create new Message configurations</li>
+              </ul>
+                So I can control my Message content and won’t have to worry about losing Snippets.
+            </li>
+            <li>I want to load the Message Snippet and Conversion Snippet so Leery can function as described.</li>
+            <li>I want the Message to include the most current conversion that took place, as well as the logo of the customer (“Customer”) involved so I can take advantage of the benefits of dynamic social proof.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>User Flows</h3>
+      <p><em>The diagrams below show the full use cycle of the Leery product. The colored labels (e.g. "User App") refer to the various components of the product, which are described in more detail in the System Design section below.</em></p>
+      <div class="user-flow">
+        <img src="img/uf-step-1.svg" alt="">
+        <img src="img/uf-step-2.svg" alt="">
+        <img src="img/uf-step-3.svg" alt="">
+      </div>
+      <h3>System Design</h3>
+      <ul>
+        <li><p>Leery Landing Page (Webflow)</p>
+          <ul>
+            <li>Explains the product and Links to the User App.</li>
+          </ul>
+        </li>
+        <li><p>User App (Node-React-Express)</p>
+          <ul>
+            <li>An app for B2B businesses to sign up for Leery and access the user portal.</li>
+            <li>The user portal allows for the creation and editing of Messages, as well as continued access to Snippets.</li>
+          </ul>
+        </li>
+        <li><p>Widget (Node-React)</p>
+          <ul>
+            <li>Accessed through the Message Snippet, generates Messages.</li>
+          </ul>
+        </li>
+        <li><p>Conversion Assist (Javascript)</p>
+          <ul>
+            <li>Accessed through the Conversion Snippet, pulls Customer conversion data.</li>
+          </ul>
+        </li>
+        <li><p>API (Node-Express)</p>
+          <ul>
+            <li><p>Connects to PostgreSQL database to store:</p>
+              <ul>
+                <li>User credentials</li>
+                <li>User conversion events</li>
+                <li>Customer conversion data</li>
+                <li>Customer's User activities (e.g. User page visits, Messages viewed, number of conversions)</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <img class="data-tables" src="img/data-tables.png" alt="">
+      <h3></h3>
+    </div>
+  </body>
+</html>

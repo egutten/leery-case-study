@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="286.997px" height="294.333px" viewBox="0 0 286.997 294.333" enable-background="new 0 0 286.997 294.333"
+	 xml:space="preserve">
+<g id="Layer_2">
+	<rect x="4.377" y="3.519" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="278.913" height="286.249"/>
+</g>
+<g id="Layer_1">
+	<text transform="matrix(1 0 0 1 86.4902 28.4336)" fill="#BE1E2D" font-family="'MyriadPro-Regular'" font-size="12">STEP 1: USER SIGN UP</text>
+	<rect x="75.824" y="44.351" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="76" height="31.333"/>
+	<text transform="matrix(1 0 0 1 85.4346 63.6841)" font-family="'MyriadPro-Regular'" font-size="10">Sign Up Form</text>
+	<rect x="75.824" y="137.475" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="76" height="40.667"/>
+	<text transform="matrix(1 0 0 1 92.0396 154.5176)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">Configure </tspan><tspan x="1.61" y="12" font-family="'MyriadPro-Regular'" font-size="10">Messages</tspan></text>
+	<rect x="75.824" y="222.475" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="112" height="54.376"/>
+	<text transform="matrix(1 0 0 1 81.4199 240.1841)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">Scripts accessed by User</tspan><tspan x="12.01" y="12" font-family="'MyriadPro-Regular'" font-size="10">based on Message</tspan><tspan x="22.09" y="24" font-family="'MyriadPro-Regular'" font-size="10">configuration</tspan></text>
+	
+		<text transform="matrix(1 0 0 1 184.8906 51.9355)" font-family="'MyriadPro-Regular'" font-size="10" text-decoration=" underline">POST to Users table:</text>
+	<text transform="matrix(1 0 0 1 184.4902 66.269)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">- id</tspan><tspan x="0" y="12" font-family="'MyriadPro-Regular'" font-size="10">- email</tspan><tspan x="0" y="24" font-family="'MyriadPro-Regular'" font-size="10">- company_name</tspan><tspan x="0" y="36" font-family="'MyriadPro-Regular'" font-size="10">- password (hashed</tspan></text>
+	<text transform="matrix(1 0 0 1 203.3081 146.6431)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10" text-decoration=" underline">POST to</tspan><tspan x="-36.089" y="12" font-family="'MyriadPro-Regular'" font-size="10" text-decoration=" underline">Conversion_Events table:</tspan></text>
+	<text transform="matrix(1 0 0 1 185.8232 172.3101)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">- id</tspan><tspan x="0" y="12" font-family="'MyriadPro-Regular'" font-size="10">- user_id</tspan><tspan x="0" y="24" font-family="'MyriadPro-Regular'" font-size="10">- conversion_event</tspan></text>
+	<rect x="231.49" y="57.102" fill="#DAB0D3" width="34.333" height="17.667"/>
+	<text transform="matrix(1 0 0 1 241.1572 69.1021)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">API</text>
+	<rect x="232.823" y="164.186" fill="#DAB0D3" width="34.333" height="17.667"/>
+	<text transform="matrix(1 0 0 1 243.3232 176.8525)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">API</text>
+	<rect x="15.491" y="46.685" fill="#FEE4A1" width="53.333" height="26.667"/>
+	<text transform="matrix(1 0 0 1 21.8242 63.3521)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">USER APP</text>
+	<rect x="15.491" y="145.474" fill="#FEE4A1" width="53.333" height="26.667"/>
+	<text transform="matrix(1 0 0 1 21.8242 162.1416)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">USER APP</text>
+	<rect x="15.491" y="234.808" fill="#FEE4A1" width="53.333" height="26.667"/>
+	<text transform="matrix(1 0 0 1 21.8242 251.4756)" fill="#2E3192" font-family="'MyriadPro-Regular'" font-size="10">USER APP</text>
+	<g>
+		<path fill="#FFFFFF" d="M107.158,75.685"/>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="107.158" y1="131.439" x2="107.158" y2="75.685"/>
+			<g>
+				<path d="M107.158,137.475c1.054-2.84,2.852-6.363,4.756-8.547l-4.756,1.72l-4.755-1.72
+					C104.307,131.111,106.105,134.635,107.158,137.475z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="107.158" y1="217.334" x2="107.158" y2="178.141"/>
+			<g>
+				<path d="M107.158,223.37c1.054-2.84,2.852-6.363,4.756-8.547l-4.756,1.72l-4.755-1.72
+					C104.307,217.006,106.105,220.53,107.158,223.37z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
