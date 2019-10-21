@@ -15,6 +15,7 @@ h2 {
 
 h3 {
   color: #6D35B9;
+  margin-top: 50px;
 }
 
 em {
@@ -107,6 +108,11 @@ li {
 .overlay-text .title {
   font-size: 50px;
   margin-bottom: 0px;
+}
+
+.comment {
+  background: #e8e9eb;
+  padding: 20px;
 }
 
 .user-flow {
