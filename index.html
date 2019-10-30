@@ -25,45 +25,45 @@
     </div>
     <div class="content">
       <h2>Problem</h2>
-      <p>B2B businesses do not leverage dynamic forms of social proof as effectively as B2C businesses.</p>
+      <p>On most B2B websites, you’ll find the same static forms of social proof. Testimonials. Logos. Case studies. They’re one of the most powerful and widely used marketing tools to convert visitors into customers. However, social proof for B2B websites is notoriously difficult to capture and keep up-to-date, leading to stale content, expensive refreshes, and lost conversion opportunities.</p>
       <h2>Solution</h2>
       <h3>Overview</h3>
-      <p class="comment">I came to this solution by researching and examining competitive social proof products. The most compelling to me was Proof, and it struck me how it was built only for B2C businesses. I thought of adding logos to Proof's message model by noticing that the typical B2B practice is to statically post logos on a homepage. That static posting not only discourages any updates to the group of logos, it also does not bring any particular attention to them.</p>
+      <p class="comment">We wanted to automatically capture and display relevant social proof for B2B websites, converting more customers and reducing marketing costs. After researching successful B2C social proof products, we planned to take the key features of these products and target a B2B customer. Given that logos are one of the most powerful and common forms of B2B social proof, this became the key differentiating feature for our MVP concept.</p>
       <ul>
         <li><p>Concept</p>
           <ul>
-            <li><p>Show Prospective customers only the most current social proof data through a pop-up message (the "Message"), which includes:</p>
+            <li><p>Show visitors recent social proof through a pop-up message (the "Message"), which includes:</p>
               <ul>
                 <li>The most recent conversion event that took place (e.g. “Just signed-up for a trial”)</li>
                 <li>How long ago the conversion event occurred (e.g. “2 seconds ago”)</li>
-                <li>The logo of the customer involved in the social proof (to take advantage of a benefit particular to B2B businesses)</li>
+                <li>The logo of the converted customer</li>
               </ul>
             </li>
           </ul>
         </li>
         <li><p>Execution</p>
           <ul>
-            <li><p>Offer third-party javascript that:</p>
+            <li><p>Develop a third-party javascript widget that:</p>
               <ul>
                 <li>Gathers a B2B business’ ("User’s") conversion data necessary to populate the Message (“Conversion Snippet”)</li>
-                <li>Generates the Message on load of a User’s webpage (“Message Snippet”)</li>
+                <li>Displays the Message to visitors of a User’s webpage (“Message Snippet”)</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
-      <h3>Overall Development Process</h3>
-      <p class="comment">The development process was formed not only to help provide structure to a large-scope project, but also to simulate working with a bigger team.</p>
+      <h3>Development Process</h3>
+      <p class="comment">The development process was formed not only to help break down a large-scope project into deliverables, but also to simulate working with a bigger team.</p>
       <ul>
-        <li>Broad concept discussion</li>
-        <li>Creation of User Flow and System Design (detailed below)</li>
+        <li>Product vision and MVP requirements</li>
+        <li>User Flow and System Design (detailed below)</li>
         <li>Sprint planning based on user stores (Asana)</li>
         <li>Code review</li>
         <li>Code refactor</li>
         <li>Product testing</li>
       </ul>
       <h3>User Stories</h3>
-      <p class="comment">Writing user stories helped me think through what I needed to do, as well as practice communicating my ideas in a commonly-understood format.</p>
+      <p class="comment">After working with the Product Manager to define our requirements and vision for the MVP, I broke down our rough sketches into user stories. Writing user stories helped me think through what I needed to do, as well as scope and plan out our sprints.</p>
       <ul>
         <li><p>As a User, I want to:</p>
           <ul>
@@ -71,29 +71,28 @@
             <li>Be able to configure and preview the appearance of my Message during the sign-up flow so I can use Leery right away.</li>
             <li><p>While logged in to the Leery User App:</p>
               <ul>
-                <li>Access and be instructed how to use the pre-generated Snippets</li>
-                <li>Edit my original Message and create new Message configurations</li>
+                <li>Access and be instructed how to use the pre-generated Snippets.</li>
+                <li>Edit my original Message and create new Message configurations.</li>
               </ul>
-                So I can control my Message content and won’t have to worry about losing Snippets.
             </li>
-            <li>Easily load the Message Snippet and Conversion Snippet in my own codebase so Leery can function as described.</li>
-            <li>The Message to include the most current conversion that took place, as well as the logo of the customer (“Customer”) involved so I can take advantage of the benefits of dynamic social proof.</li>
+            <li>Easily inject the Message Snippet and Conversion Snippet into my own codebase so Leery can function as described.</li>
+            <li>View the most recent conversion that took place, as well as the logo of the customer (“Customer”) involved so I can take advantage of the benefits of dynamic social proof.</li>
           </ul>
         </li>
       </ul>
       <h3>User Flows</h3>
-      <p class="comment">The diagrams below show the full use cycle of Leery. The colored labels (e.g. "User App") refer to the various components of the product, which are described in more detail in the System Design section below.</p>
+      <p class="comment">Before starting to code, I planned out the user experience to ensure it was both simple and well-architected. The diagrams below show the full use cycle of Leery. The colored labels (e.g. "User App") refer to the various components of the product, which are described in more detail in the System Design section below.</p>
       <div class="user-flow">
         <img src="img/uf-step-1.svg" alt="">
         <img src="img/uf-step-2.svg" alt="">
         <img src="img/uf-step-3.svg" alt="">
       </div>
       <h3>System Design</h3>
-      <p class="comment">Leery's components were dictated by the needs that naturally arose from the User Flow above. The database structure was designed to be simple enough for anyone to understand in conjunction with the product, as well as efficient enough to allow for table joins that would produce the necessary data.</p>
+      <p class="comment">Leery's architecture was dictated by the needs that naturally arose from the User Flow above. The database structure was designed to easily enable table joins for both current functionality and future analytics features. For the application, I chose a Javascript tech stack (e.g. React and Node.js) to benefit from a single page application on the front-end and reduce context switching between front-end and back-end development. For the static landing page, Webflow saved hours of HTML/CSS styling to enable me to focus more on building application features.</p>
       <ul>
         <li><p>Leery Landing Page (Webflow)</p>
           <ul>
-            <li>Explains the product and links to the User App.</li>
+            <li>Marketing site to explain the product and link to the User App.</li>
           </ul>
         </li>
         <li><p>User App (Node-React-Express)</p>
@@ -104,12 +103,12 @@
         </li>
         <li><p>Widget (Node-React)</p>
           <ul>
-            <li>Accessed through the Message Snippet, generates Messages.</li>
+            <li>Loaded through the Message Snippet, generates Messages.</li>
           </ul>
         </li>
         <li><p>Conversion Assist (Javascript)</p>
           <ul>
-            <li>Accessed through the Conversion Snippet, pulls Customer conversion data.</li>
+            <li>Loaded through the Conversion Snippet, tracks Customer conversion data.</li>
           </ul>
         </li>
         <li><p>API (Node-Express)</p>
@@ -127,7 +126,7 @@
       </ul>
       <img class = "data-diagram" src="img/data-diagram.png" alt="">
       <h3 class="deployment">Deployment</h3>
-      <p class="comment">Deployment was a multi-step process that involved considering what AWS feature would be the most fitting for each component in the System Design. SSL certificates were added after achieving a basic push to production.</p>
+      <p class="comment">To get Leery in production, I needed to deploy the API (Node.js) and various static assets (React, Javascript, HTML/CSS). I chose AWS as a cloud provider to take advantage of their free tier and “pay as you scale” model. Deployment was a multi-step process that involved considering which AWS product would be the most fitting for each component in the System Design. Whenever possible, I chose products that required minimal maintenance and configuration to maximize uptime (e.g. S3 and Elastic Beanstalk rather than EC2).</p>
       <ul>
         <li><p>Leery Landing Page</p>
           <ul>
@@ -144,12 +143,12 @@
         <li><p>API</p>
           <ul>
             <li>AWS Elastic Beanstalk: https://api.getleery.com</li>
-            <li>SSL achieved through Load Balancer configuration and redirect code employed through .ebextensions</li>
+            <li>SSL achieved through Load Balancer configuration and redirect code through .ebextensions</li>
           </ul>
         </li>
       </ul>
       <h3>Future Enhancements</h3>
-      <p class="comment">While Leery is indeed my pride and joy, I realize it is not perfect and am therefore constantly considering ways to improve it.</p>
+      <p class="comment">Leery has a lot of opportunity for growth, and I’m constantly considering ways to improve it. Throughout the project, I added tickets to our backlog as I found opportunities to improve security, add new functionality, or fix existing bugs. As we moved past the MVP launch, I prioritized backlog tickets to continue iterating on the product.</p>
       <ul>
         <li><p>Security</p>
           <ul>
@@ -162,7 +161,7 @@
             <li>In the User App, ability to delete Messages</li>
           </ul>
         </li>
-        <li><p>Miscellaneous</p>
+        <li><p>Tech Debt/Bugs</p>
           <ul>
             <li>In the User App, the signup page should not submit if the front-end validation fails</li>
             <li>In the User App API routes, instead of checking if a Message exists and then determining whether to create or edit a Message, use an upsert function</li>
@@ -170,11 +169,12 @@
         </li>
       </ul>
       <h3>Team</h3>
-      <p class="comment">The Product Manager mainly played a part-time role helping to guide the development process and review code, while I worked on all other aspects of Leery as a full-time endeavor.</p>
+      <p class="comment">The Product Manager mainly played a part-time role in helping to guide the vision, development process, and code reviews, while I worked on all other aspects of Leery full-time.</p>
       <ul>
         <li><p>Product Manager: Marshall Guttenberg</p>
           <ul>
-            <li>My husband and engineer of 10 years, product manager for 4 years; currently works at Hired</li>
+            <li>My husband and former software engineer</li>
+            <li>Currently Senior Product Manager at Hired</li>
           </ul>
         </li>
         <li>Engineer: Myself</li>
